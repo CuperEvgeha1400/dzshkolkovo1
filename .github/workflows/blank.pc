@@ -1,0 +1,121 @@
+Задание 1
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string fname = Console.ReadLine();
+            string sname = Console.ReadLine();
+            Console.WriteLine("Hi" + " " + fname+ " " + sname);
+        }
+    }
+}
+Задание 2
+using System; 
+
+namespace dz1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var a1 = Console.ReadLine();
+            var a = Console.ReadLine();
+            var SomeNumb = int.Parse(a1);
+            var SecNumb = int.Parse(a);
+            var result = SomeNumb / SecNumb;
+            Console.WriteLine(result);
+            
+                
+        }
+    }
+}
+задание 3
+ч	using System; 
+
+namespace dz1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var a1 = Console.ReadLine();
+            var a = Console.ReadLine();
+            var SomeNumb = int.Parse(a1);
+            var SecNumb = int.Parse(a);
+            if (bool.TryParse(a1, out var inta))
+            {
+
+                Console.Write("введите корректное значение");
+            }
+            else
+            {
+                var result = SomeNumb / SecNumb;
+                Console.WriteLine(result);
+            }
+            //if (bool.TryParse(a1, out var intn))
+            //{
+              //  var result = SomeNumb / SecNumb;
+                //Console.WriteLine(result);
+            //}
+            //else
+            //{
+              //  Console.Write("введите корректное значение");
+         }
+            
+                
+        }
+    }
+
+задание 4
+using System; 
+
+namespace dz1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("введите коэфициент перед x^2");
+            var x11 = Console.ReadLine();
+            Console.WriteLine("введитн коэфициент перед х");
+            var x22 = Console.ReadLine();
+            Console.WriteLine("введите последнее число");
+            var x3 = Console.ReadLine();
+            if(int.TryParse(x11, out var ass))
+            {
+                var a = int.Parse(x11);
+                var b = int.Parse(x22);
+                var c = int.Parse(x3);
+                var D = Math.Pow(b, 2) - 4 * a * c;
+                var x1d = -b + Math.Sqrt(D);
+                var x1o =2*a;
+                var x1 = x1d / x1o;
+                var x2d = -b - Math.Sqrt(D);
+                var x2 = x2d / x1o;
+                Console.WriteLine(x1 + " " + x2);
+
+          
+            }
+            else
+            {
+                Console.WriteLine("вы ничего не ввели");
+            }
+
+
+
+
+
+
+
+        }    
+            
+                
+        }
+    }
+
+
+
